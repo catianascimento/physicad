@@ -1,8 +1,11 @@
 # Dengue and Mobility Data Analysis Project
 
+**Important Note:**  
+Due to the confidentiality of dengue case data, we have generated synthetic (fake) data based on the real data.  
+
 This project uses Python notebooks to process dengue and mobility data, generate networks, and make comparisons between the networks based on different metrics. Below is a description of each notebook in the project:
 
-## 01 - **denguedataprocessing.ipynb**
+## 01-denguedataprocessing.ipynb
 This notebook aims to process daily dengue case data and generate weekly data. It also generates histograms for both daily and weekly data and performs some exploratory analyses. Additionally, the **mutual information** between the time series of dengue cases is calculated, and a similarity matrix based on this metric is generated and saved to a file.
 
 ### Features:
@@ -11,7 +14,7 @@ This notebook aims to process daily dengue case data and generate weekly data. I
 - Calculate mutual information between time series of dengue cases.
 - Generate a similarity matrix based on mutual information.
 
-## 02 - **firstcomparisons.ipynb**
+## 02-firstcomparisons.ipynb
 This notebook performs some comparative analyses between **mobility x distance** and **mutual information x distance**. Statistical analyses are conducted, including the calculation of a **linear regression**, to explore the relationships between these variables.
 
 ### Features:
@@ -19,21 +22,21 @@ This notebook performs some comparative analyses between **mobility x distance**
 - Analysis between mutual information and distance.
 - Linear regression calculation and interpretation.
 
-## 03 - **denguenetworks.ipynb**
+## 03-denguenetworks.ipynb
 In this notebook, dengue networks are generated using thresholds applied to the similarity matrices obtained from the **mutual information** calculated between the weekly dengue case time series in each traffic zone.
 
 ### Features:
 - Generate networks based on thresholds applied to similarity matrices.
 - Construct dengue networks using mutual information.
 
-## 04 - **mobnetworks.ipynb**
+## 04-mobnetworks.ipynb
 This notebook contains the necessary code to generate mobility networks. The networks are constructed by applying thresholds to the flow matrix between the traffic zones.
 
 ### Features:
 - Generate mobility networks based on flow matrices.
 - Construct mobility networks using thresholds applied to the matrices.
 
-## 05 - **comparingnetworks.ipynb**
+## 05-comparingnetworks.ipynb
 In the final notebook, we compare dengue networks with mobility networks. Different comparison metrics, such as the **Frobenius norm**, are used to assess the differences and similarities between the networks generated in the previous notebooks.
 
 ### Features:
